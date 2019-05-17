@@ -8,6 +8,18 @@ Subversion to git conversion related links
 
 Links
 =====
+Cygwin
+Cygwin is a Linux-like environment for Windows.
+http://www.cygwin.com/
+
+LaTeX to PDF
+Nice outline of process and converting various graphics formats.
+http://mintaka.sdsu.edu/GF/bibliog/latex/LaTeXtoPDF.html
+
 Subversion to git conversion github repo
   https://github.com/marcilr/svn-to-git-tex
   git@github.com:marcilr/svn-to-git-tex.git
+
+The teTeX HOWTO: The Linux-teTeX Local Guide
+http://tldp.org/HOWTO/TeTeX-HOWTO.html
+
