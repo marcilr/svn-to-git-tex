@@ -38,6 +38,18 @@
 %% caption package for use in justifying table or figure captions
 \usepackage{caption}
 
+%%
+%% datetime.sty v2.60: Formatting
+%% Current Date and Time
+%% Nicola L. C. Talbot
+%% Dickimaw Books
+%% http://www.dickimaw-books.com/
+%% 2015-03-20
+%% http://ctan.math.washington.edu/tex-archive/obsolete/\
+%% macros/latex/contrib/datetime/datetime.pdf
+%%
+\usepackage{datetime}
+
 \usepackage{xspace}
 \usepackage{booktabs}
 \usepackage[first,bottomafter]{draftcopy}
@@ -214,10 +226,10 @@ pdfkeywords={LaTeX Examples}
 }
 
 % Display subversion revision and date under author on 1st page.
-\date{Revision \svnInfoRevision
-      \hspace{2pt}
-      (\svnInfoLongDate)}
-
+%%\date{Revision \svnInfoRevision
+%%      \hspace{2pt}
+%%      (\svnInfoLongDate)}
+\date{\usdate\today}
 
 % Set date to RCS revision date
 %%\date{Revision \RCSRevision
@@ -241,7 +253,6 @@ pdfkeywords={LaTeX Examples}
   This document contains the details of
   Subversion to Git revision control system
   conversion.
-
 \end{abstract}
 
 \vspace{2.0in}
