@@ -29,6 +29,11 @@ mintaka.sdsu.edu/
 
 Filelist
 ========
+build.xml
+  Ant build.xml to compile LaTeX file crafted by Jason Kattell at
+  DNR LRIS BPU.  He used the ant apply task to make it a bit more
+  abstract.  Cool stuff.
+
 links.txt
   Subvertion to git conversion related links
 
