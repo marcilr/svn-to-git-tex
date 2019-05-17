@@ -34,6 +34,10 @@ build.xml
   DNR LRIS BPU.  He used the ant apply task to make it a bit more
   abstract.  Cool stuff.
 
+clean.bat
+  Remove dynamically created files from build process.
+  Analogous to 'make clean' target.
+
 links.txt
   Subvertion to git conversion related links
 
