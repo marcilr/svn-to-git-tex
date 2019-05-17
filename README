@@ -38,6 +38,9 @@ clean.bat
   Remove dynamically created files from build process.
   Analogous to 'make clean' target.
 
+cygwin.txt
+  Build notes for LaTeX using cygwin.
+
 links.txt
   Subvertion to git conversion related links
 
