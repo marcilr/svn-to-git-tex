@@ -225,16 +225,7 @@ pdfkeywords={LaTeX Examples}
         \texttt{$<$marcilr@gmail.com$>$}
 }
 
-% Display subversion revision and date under author on 1st page.
-%%\date{Revision \svnInfoRevision
-%%      \hspace{2pt}
-%%      (\svnInfoLongDate)}
-\date{\usdate\today}
 
-% Set date to RCS revision date
-%%\date{Revision \RCSRevision
-%%      \hspace{2pt}
-%%      (\RCSDate)}
 
 
 %%
@@ -246,6 +237,21 @@ pdfkeywords={LaTeX Examples}
 
 
 \begin{document}
+
+%%
+%% Display current date from datetime package
+%% http://ctan.math.washington.edu/tex-archive/obsolete/\
+%% macros/latex/contrib/datetime/datetime.pdf
+%%
+\date{\today}
+
+
+\newdateformat{monthdayyeardate}{%
+  \monthname[\THEMONTH]~\THEDAY, \THEYEAR}
+
+\monthdayyeardate\today
+
+\title{Subversion to Git Conversion}
 
 \maketitle
 
