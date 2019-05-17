@@ -41,6 +41,9 @@ clean.bat
 cygwin.txt
   Build notes for LaTeX using cygwin.
 
+docs/
+  Documenation
+
 links.txt
   Subvertion to git conversion related links
 
