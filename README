@@ -53,9 +53,12 @@ make.bat
 Makefile
   Standard GNU makefile to build LaTeX document.
 
+svn-to-git.pdf
+  Built LaTeX document
+
 svn-to-git.tex
   Subversion to git conversion
+  LaTeX source
 
 svn-to-git.txt
   Subvertion to git conversion
-
