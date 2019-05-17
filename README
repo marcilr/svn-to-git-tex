@@ -47,6 +47,9 @@ docs/
 links.txt
   Subvertion to git conversion related links
 
+make.bat
+  Build PDF from LaTeX source
+
 Makefile
   Standard GNU makefile to build LaTeX document.
 
