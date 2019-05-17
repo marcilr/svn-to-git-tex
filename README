@@ -47,6 +47,9 @@ docs/
 links.txt
   Subvertion to git conversion related links
 
+Makefile
+  Standard GNU makefile to build LaTeX document.
+
 svn-to-git-tex.txt
   Subvertion to git conversion
 
