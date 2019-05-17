@@ -3,6 +3,30 @@ Created Fri May 17 13:26:35 AKDT 2019
 Copyright (C) 2019 by Raymond E. Marcil <marcilr@gmail.com>
 
 
+
+Build Process
+=============
+Traditionally, you converted your LaTeX source file to a DVI file, which could
+then be  converted to PostScript with dvips.  This, in turn, can be converted
+to a PDF file by ps2pdf:
+
+                  latex             dvips            ps2pdf
+        text.tex -------> text.dvi -------> text.ps --------> text.pdf
+
+This requires all the graphics to be EPS files. But that's not a major problem,
+as raster graphics can be converted to EPS.  Furthermore, the scalability of
+vector graphics means clean-looking figures at all resolutions.  And vector PS
+is usually very compact.
+
+But what about using photographs, which are usually saved as JPEGs?  This
+really isn't a problem, because the jpeg2ps command (from Debian's jpeg2ps
+package) wraps JPEG images in an EPS header. 
+
+mintaka.sdsu.edu/
+
+
+
+
 Filelist
 ========
 links.txt
