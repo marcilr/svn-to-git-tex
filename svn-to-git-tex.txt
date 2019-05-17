@@ -1,0 +1,6 @@
+svn-to-git-tex.txt
+Created Fri May 17 13:25:43 AKDT 2019
+Copyright (C) 2019 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Subvertion to git conversion
