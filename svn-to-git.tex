@@ -110,7 +110,7 @@ pdfkeywords={LaTeX Examples}
 ]{hyperref}
 
 
-%%
+  %%
 %%%%%% Customization.
   %%
 
@@ -222,10 +222,6 @@ pdfkeywords={LaTeX Examples}
 %%%%%% Document.
   %%
 
-
-%%
-%% Main body of document.
-%%   
 \begin{document}
 
 %%
@@ -257,35 +253,18 @@ pdfkeywords={LaTeX Examples}
 \input{00SECTIONS/titlepage.tex}
 \input{00SECTIONS/contents.tex}
 \input{00SECTIONS/figures.tex}
-
-
+\input{00SECTIONS/tables.tex}
+\input{00SECTIONS/abbreviations.tex}
+\input{00SECTIONS/introduction.tex}
+\input{00SECTIONS/questions.tex}
+  
 %%
 %% Main body of document
 %%
-\newpage
-\lipsum[1]
-
-\listoftables
-
-\input{00SECTIONS/abbreviations.tex}
 
 
-
-%% ====================== Introduction ===========================
-%% ====================== Introduction ===========================
-\newpage
-\section{Introduction}
-Introduction to the \LaTeX\ Template with Examples.
-
-
-%% ======================== Questions ============================
-%% ======================== Questions ============================
-\section{Questions}
-\begin{itemize*}
-     \item{} Break table column over two rows?
-\end{itemize*}
-
-%%\FIXME{None yet...}
+%%\newpage
+%%\lipsum[1
 
 
 %% ======================== Examples =============================
