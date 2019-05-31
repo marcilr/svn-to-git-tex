@@ -11,5 +11,8 @@ abbreviations.tex
 contents.tex
   Table of contents
 
+figures.tex  
+  List of figures
+
 titlepage.tex
   Title page
