@@ -63,6 +63,7 @@ PDF = $(BASENAME).pdf
 LOF = $(BASENAME).lof
 LOT = $(BASENAME).lot
 OUT = $(BASENAME).out
+TOC = $(BASENAME).toc
 
 #
 # Get subversion revision number from latex file using:
@@ -103,10 +104,10 @@ clean: mostly-clean
 # and files other than bz2 and pdf.
 #
 mostly-clean:
-	$(RM) -f $(LOG) $(LOF) $(AUX) $(TOC) $(DVI) $(PS) 
-	$(RM) -f $(BBL) $(BLG) $(LOT) $(OUT)
+	$(RM) -f $(LOG) $(LOF) $(AUX) $(TOC) $(DVI) $(PS)
+	$(RM) -f $(BBL) $(BLG)
 	$(RM) -rf $(BASENAME)
-	$(RM) -f *.aux *.dvi *.lof *.log *.ps *.tmp
+	$(RM) -f *.aux *.dvi *.lof *.log *.ps *.tmp *.toc *.lot *.out
 
 # Wrapper targets for humans
 dvi: ${DVI}
