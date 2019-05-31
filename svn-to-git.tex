@@ -6,6 +6,14 @@
 %% 
 %% Subversion to Git Conversion
 %%
+%% Links
+%% =====
+%% LaTeX/Modular Documents
+%% 'Working on discrete parts of your documents has
+%% consequences for how the base file is compiled;
+%% these will be dealt with below.'
+%% https://en.wikibooks.org/wiki/LaTeX/Modular_Documents
+%%
 
   %%
 %%%%%% Preamble.
@@ -19,8 +27,13 @@
 \author{Raymond E. Marcil\\
         \texttt{$<$marcilr@gmail.com$>$}
 }
-\date{\today}
 
+%%
+%% Display current date from datetime package
+%% http://ctan.math.washington.edu/tex-archive/obsolete/\
+%% macros/latex/contrib/datetime/datetime.pdf
+%%
+\date{\today}
 
 
 %% rcs is the package to display cvs revision info.
@@ -234,12 +247,32 @@ pdfkeywords={LaTeX Examples}
 %%   
 \begin{document}
 
-\maketitle
-
-\begin{abstract}
-Details for Subversion to Git revision control system conversion.
-%%\lipsum[1]
-\end{abstract}
+%%
+%% \input{filename} imports the commands from filename.tex
+%% into the target file; it's equivalent to typing all the
+%% commands from filename.tex right into the current file
+%% where the \input line is.
+%%
+%% \include{filename} essentially does a \clearpage before
+%% and after \input{filename}, together with some magic to
+%% switch to another .aux file, and omits the inclusion at
+%% all if you have an \includeonly without the filename in
+%% the argument.  This is primarily useful when you have a
+%% big project on a slow computer; changing one of the
+%% include targets won't force you to regenerate the
+%% outputs of all the rest.
+%%
+%% \include{filename} gets you the speed bonus, but it
+%% also can't be nested, can't appear in the preamble,
+%% and forces page breaks around the included text.
+%%
+%% --When should I use \input vs. \include?
+%%   https://tex.stackexchange.com/questions/246/\
+%%   when-should-i-use-input-vs-include
+%%
+\newpage
+\input{00SECTIONS/titlepage.tex}
+\input{00SECTIONS/contents.tex}
 
 
 %%
@@ -249,13 +282,6 @@ Details for Subversion to Git revision control system conversion.
 \lipsum[1]
 
 
-
-%%
-%% Display current date from datetime package
-%% http://ctan.math.washington.edu/tex-archive/obsolete/\
-%% macros/latex/contrib/datetime/datetime.pdf
-%%
-%%\date{\today}
 
 
 %%\newdateformat{monthdayyeardate}{%
@@ -292,8 +318,6 @@ Details for Subversion to Git revision control system conversion.
 %%        \end{minipage}
 %%\end{figure}
 
-\newpage
-\tableofcontents
 
 \newpage
 \listoffigures
