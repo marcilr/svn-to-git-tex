@@ -8,5 +8,5 @@ Filelist
 appendix.tex
   Appendix
 
-links.tex
-  Links included by appendix
+hyperlinks.tex
+  Hyperlinks
