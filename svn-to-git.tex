@@ -14,6 +14,15 @@
 %% Specify DVIPS driver used by things like hyperref
 \documentclass[12pt,letterpaper,dvips]{article}
 
+%% Set title, author, and date at top of document
+\title{Subversion to Git Conversion}
+\author{Raymond E. Marcil\\
+        \texttt{$<$marcilr@gmail.com$>$}
+}
+\date{\today}
+
+
+
 %% rcs is the package to display cvs revision info.
 %%\usepackage{rcs}
 \usepackage{fullpage}
@@ -67,8 +76,8 @@
 %% o the date and time of the last Subversion co command
 %% o name of the user who has done the action
 %%
-\usepackage{svninfo}
-\svnInfo $Id: svn-to-git.tex 1 2013-02-04 22:32:54Z marcilr $
+%%\usepackage{svninfo}
+%%\svnInfo $Id: svn-to-git.tex 1 2013-02-04 22:32:54Z marcilr $
 
 %%
 %% Hyperref package for embedding URLs for clickable links in PDFs, 
@@ -219,12 +228,9 @@ pdfkeywords={LaTeX Examples}
 %%%%%% Document.
   %%
 
-\title{Subversion to Git\\
-  Conversion}
+%%\title{Subversion to Git\\
+%%  Conversion}
 
-\author{Raymond E. Marcil\\
-        \texttt{$<$marcilr@gmail.com$>$}
-}
 
 
 
@@ -243,13 +249,15 @@ pdfkeywords={LaTeX Examples}
 
 %%
 %% Titlepage
+%%
 %% Got clean titlepage format from:
 %%   How can I get a title page with the LaTeX article class? [duplicate]
 %%   https://tex.stackexchange.com/questions/36929/\
 %%   how-can-i-get-a-title-page-with-the-latex-article-class
 %%
-\title{Subversion to Git Conversion}
-\author{Raymond E. Marcil}
+%%\title{Subversion to Git Conversion}
+%%\author{Raymond E. Marcil}
+
 \maketitle
 
 \begin{abstract}
