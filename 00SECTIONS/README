@@ -35,5 +35,8 @@ questions.tex
 tables.tex
   List of tables
 
+table-examples.tex
+  Table exmaples
+
 titlepage.tex
   Title page
