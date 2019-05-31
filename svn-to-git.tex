@@ -50,6 +50,7 @@
 %%
 \usepackage{datetime}
 
+\usepackage{lipsum}
 \usepackage{xspace}
 \usepackage{booktabs}
 \usepackage[first,bottomafter]{draftcopy}
@@ -238,30 +239,47 @@ pdfkeywords={LaTeX Examples}
 
 \begin{document}
 
+\title{Subversion to Git Conversion}
+\author{Raymond E. Marcil}
+\maketitle
+
+\begin{abstract}
+\lipsum[1]
+\end{abstract}
+
+
+%%
+%% Main body of document
+%%
+\newpage
+\lipsum[1]
+
+
+
 %%
 %% Display current date from datetime package
 %% http://ctan.math.washington.edu/tex-archive/obsolete/\
 %% macros/latex/contrib/datetime/datetime.pdf
 %%
-\date{\today}
+%%\date{\today}
 
 
-\newdateformat{monthdayyeardate}{%
-  \monthname[\THEMONTH]~\THEDAY, \THEYEAR}
+%%\newdateformat{monthdayyeardate}{%
+%%  \monthname[\THEMONTH]~\THEDAY, \THEYEAR}
 
-\monthdayyeardate\today
+%%\monthdayyeardate\today
 
-\title{Subversion to Git Conversion}
+%%\title{Subversion to Git Conversion}
 
-\maketitle
+%%\maketitle
 
-\begin{abstract}
-  This document contains the details of
-  Subversion to Git revision control system
-  conversion.
-\end{abstract}
+%%\begin{abstract}
+%%  This document contains the details of
+%%  Subversion to Git revision control system
+%%  conversion.
+%%\end{abstract}
 
-\vspace{2.0in}
+%%\vspace{2.0in}
 
 %% Draw DNR logo and address at bottom of page
 %%\begin{figure}[h]
