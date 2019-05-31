@@ -251,9 +251,12 @@ pdfkeywords={LaTeX Examples}
 %%   https://tex.stackexchange.com/questions/246/\
 %%   when-should-i-use-input-vs-include
 %%
-\newpage
+%% NOTE: \newpage is embedded at the beginning of
+%%       included sections as needed.
+%%
 \input{00SECTIONS/titlepage.tex}
 \input{00SECTIONS/contents.tex}
+\input{00SECTIONS/figures.tex}
 
 
 %%
@@ -262,47 +265,10 @@ pdfkeywords={LaTeX Examples}
 \newpage
 \lipsum[1]
 
-
-%%\begin{abstract}
-%%  This document contains the details of
-%%  Subversion to Git revision control system
-%%  conversion.
-%%\end{abstract}
-
-%%\vspace{2.0in}
-
-%% Draw DNR logo and address at bottom of page
-%%\begin{figure}[h]
-%%        \hspace{0.32in}
-%%        \SetFigLayout{1}{1}
-%%        \begin{minipage}[b]{0.16\figwidth}
-%%                \includegraphics[width=\textwidth]{dnr_bwlogo.eps}
-%%        \end{minipage}
-%%        \hspace{5pt}
-%%        \begin{minipage}[b]{\figwidth}
-%%                \bf{Alaska Department of Natural Resources}\\
-%%                \small{\sf{Division of Support Services\\
-%%                Land Records Information Section\\
-%%                550 W. 7th Ave. Suite 706\\
-%%                Anchorage, Alaska 99501}}
-%%        \end{minipage}
-%%\end{figure}
-
-
-\newpage
-\listoffigures
 \listoftables
 
+\input{00SECTIONS/abbreviations.tex}
 
-%% =============== List of Abbreviations ===============
-%% =============== List of Abbreviations ===============
-\newpage
-\setcounter{secnumdepth}{0}
-\section{List of Definitions and Abbreviations}
-\begin{itemize*}
-  \item{\begin{bf}MOA\end{bf}} - Municipality of Anchorage
-
-\end{itemize*}
 
 
 %% ====================== Introduction ===========================
